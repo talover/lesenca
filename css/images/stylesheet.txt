@@ -1,0 +1,98 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-1 {
+        .stitches-sprite(-5px, -5px, 12px, 8px);
+    }
+
+    &.sprite-10 {
+        .stitches-sprite(-27px, -5px, 15px, 12px);
+    }
+
+    &.sprite-11 {
+        .stitches-sprite(-52px, -5px, 11px, 7px);
+    }
+
+    &.sprite-12 {
+        .stitches-sprite(-73px, -5px, 22px, 22px);
+    }
+
+    &.sprite-13 {
+        .stitches-sprite(-105px, -5px, 19px, 15px);
+    }
+
+    &.sprite-14 {
+        .stitches-sprite(-134px, -5px, 13px, 19px);
+    }
+
+    &.sprite-15 {
+        .stitches-sprite(-157px, -5px, 13px, 11px);
+    }
+
+    &.sprite-16 {
+        .stitches-sprite(-180px, -5px, 24px, 21px);
+    }
+
+    &.sprite-17 {
+        .stitches-sprite(-214px, -5px, 12px, 15px);
+    }
+
+    &.sprite-18 {
+        .stitches-sprite(-105px, -36px, 104px, 110px);
+    }
+
+    &.sprite-19 {
+        .stitches-sprite(-5px, -156px, 104px, 110px);
+    }
+
+    &.sprite-2 {
+        .stitches-sprite(-236px, -5px, 19px, 20px);
+    }
+
+    &.sprite-20 {
+        .stitches-sprite(-119px, -156px, 104px, 110px);
+    }
+
+    &.sprite-21 {
+        .stitches-sprite(-5px, -35px, 12px, 12px);
+    }
+
+    &.sprite-22 {
+        .stitches-sprite(-265px, -5px, 141px, 64px);
+    }
+
+    &.sprite-3 {
+        .stitches-sprite(-219px, -79px, 163px, 51px);
+    }
+
+    &.sprite-4 {
+        .stitches-sprite(-5px, -79px, 52px, 41px);
+    }
+
+    &.sprite-5 {
+        .stitches-sprite(-67px, -79px, 12px, 12px);
+    }
+
+    &.sprite-6 {
+        .stitches-sprite(-392px, -79px, 22px, 14px);
+    }
+
+    &.sprite-7 {
+        .stitches-sprite(-67px, -103px, 19px, 19px);
+    }
+
+    &.sprite-8 {
+        .stitches-sprite(-392px, -103px, 19px, 19px);
+    }
+
+    &.sprite-9 {
+        .stitches-sprite(-5px, -132px, 15px, 12px);
+    }
+}
