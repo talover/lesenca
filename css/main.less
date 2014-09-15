@@ -290,6 +290,45 @@ a {
    Author's custom styles
    ========================================================================== */
 
+.in_stock {
+	color:#5ebd18;
+	font-family: 'pf_din_text_cond_promedium';
+	line-height: 1;
+
+	i {
+		.sprite;
+		.sprite-15;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 11px 0 0;
+	}
+}
+
+.num {
+	height: 23px;
+	line-height: 23px;
+	color:#fff;
+	.border-radius(10px);
+	padding: 0 10px;
+	background: #5ebd18;
+	display: inline-block;
+	margin: 7px 0 0 0;
+}
+
+.price {
+	font-family: 'pf_din_text_cond_promedium';
+	font-size: 19pt;
+	padding: 10px 0 0 0;
+
+	i {
+		.sprite;
+		.sprite-14;
+		display: inline-block;
+		vertical-align: top;
+		margin: 6px 0 0 5px;
+	}
+}
+
 #main {
 	overflow: hidden;
 }// END #main
@@ -895,44 +934,7 @@ a {
 					margin: 0;
 				}
 
-				.in_stock {
-					color:#5ebd18;
-					font-family: 'pf_din_text_cond_promedium';
-					line-height: 1;
-
-					i {
-						.sprite;
-						.sprite-15;
-						display: inline-block;
-						vertical-align: top;
-						margin: 0 11px 0 0;
-					}
-				}
-
-				.num {
-					height: 23px;
-					line-height: 23px;
-					color:#fff;
-					.border-radius(10px);
-					padding: 0 10px;
-					background: #5ebd18;
-					display: inline-block;
-					margin: 7px 0 0 0;
-				}
-
-				.price {
-					font-family: 'pf_din_text_cond_promedium';
-					font-size: 19pt;
-					padding: 10px 0 0 0;
-
-					i {
-						.sprite;
-						.sprite-14;
-						display: inline-block;
-						vertical-align: top;
-						margin: 6px 0 0 5px;
-					}
-				}
+				
 
 				.buy {
 					display: block;
@@ -1488,7 +1490,7 @@ a {
 	.clearfix {
 		padding-top: 20px;
 
-		.f_left {
+		&> .f_left {
 			width: 399px;
 			position: relative;
 
@@ -1553,6 +1555,10 @@ a {
 				}
 			}
 		}
+
+		&> .f_right {
+			width: 220px;
+		}
 	}
 	
 	.item_title {
@@ -1584,6 +1590,7 @@ a {
 		}
 
 	}
+<<<<<<< HEAD
 }
 
 .catalog-list {
@@ -1719,4 +1726,16 @@ a {
 			}
 		}
 	}
+=======
+>>>>>>> b516af74fca6cece73a869dd41b1716933f06132
+}
+
+.bordered_block {
+	border: 2px solid #ededed;
+	-webkit-border-radius: 10px;
+	-moz-order-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	padding: 12px;
 }
