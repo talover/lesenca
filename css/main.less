@@ -214,7 +214,7 @@ a {
 
 .border-radius(@x) {
 	-webkit-border-radius: @x;
-	-moz-order-radius: @x;
+	-moz-border-radius: @x;
 	-ms-border-radius: @x;
 	-o-border-radius: @x;
 	border-radius: @x;
@@ -222,7 +222,7 @@ a {
 
 .border-radius-full(@a,@b,@c,@d) {
 	-webkit-border-radius: @a @b @c @d;
-	-moz-order-radius: @a @b @c @d;
+	-moz-border-radius: @a @b @c @d;
 	-ms-border-radius: @a @b @c @d;
 	-o-border-radius: @a @b @c @d;
 	border-radius: @a @b @c @d;
@@ -982,6 +982,10 @@ a {
 				}
 			}
 		}
+	}
+
+	.in_stock {
+		margin-bottom: 10px!important;
 	}
 }
 
@@ -1871,12 +1875,24 @@ a {
 			}
 		}
 	}
+
+.bordered_block {
+	border: 2px solid #ededed;
+	-webkit-border-radius: 10px;
+	-moz-order-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	padding: 12px;
 }
 
 .price-block {
+	padding: 22px 20px 48px 20px;
+	.box-sizing(border-box);
+
 	table {
 		width: 100%;
-		margin: 16px 0 0 0;
+		margin: 16px 0 45px 0;
 
 		thead {
 			th {
@@ -1904,6 +1920,7 @@ a {
 			tr {
 
 				&:nth-child(even) {
+				&:nth-child(4n + 3) {
 					td {
 						background: #f7f7f7;
 					}
@@ -1919,6 +1936,7 @@ a {
 					border: 2px solid #f4f4f4;
 					border-top: 2px solid #e4e4e4;
 					border-bottom:2px solid #e4e4e4;
+					border: 2px solid #e4e4e4;
 					vertical-align: top;
 					text-align: center;
 					color: #424242;
@@ -1934,6 +1952,18 @@ a {
 
 					&:last-child {
 						border-right:2px solid #e4e4e4;
+					padding: 15px 0;
+					background: #fff;
+
+					&.space {
+						border: 0;
+						height: 10px;
+						padding: 0;
+					}
+
+
+					&:first-child {
+						width: 166px;
 					}
 
 					.img-block {
@@ -1949,6 +1979,10 @@ a {
 
 					.name {
 						color: #424242;
+
+						&:hover {
+							text-decoration: none;
+						}
 					}
 
 					.in_stock {
@@ -1980,6 +2014,7 @@ a {
 					}
 
 					.buy {
+					.buy-price {
 						color: #f25822;
 						text-decoration: none;
 						font-weight: bold;
@@ -1997,4 +2032,10 @@ a {
 		}
 	}
 }
-	
+
+
+.photo-gallery-block {
+	padding: 22px 20px 48px 20px;
+	.box-sizing(border-box);
+}
+
