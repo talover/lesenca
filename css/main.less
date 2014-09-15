@@ -983,6 +983,10 @@ a {
 			}
 		}
 	}
+
+	.in_stock {
+		margin-bottom: 10px!important;
+	}
 }
 
 #news {
@@ -1820,9 +1824,7 @@ a {
 			}
 		}
 	}
-<<<<<<< HEAD
-=======
->>>>>>> b516af74fca6cece73a869dd41b1716933f06132
+
 }
 
 .bordered_block {
@@ -1841,7 +1843,7 @@ a {
 
 	table {
 		width: 100%;
-		margin: 16px 0 0 0;
+		margin: 16px 0 45px 0;
 
 		thead {
 			th {
@@ -1851,8 +1853,7 @@ a {
 				font-family: 'pf_din_text_cond_promedium';
 				height: 48px;
 				background: #f25822;
-				border-left: 1px solid #df5424;
-				border-right: 1px solid #ff6f3d;
+				border-left: 2px groove rgba(255, 255, 255, 0.1);
 
 				&:first-child {
 					border-left:0;
@@ -1865,8 +1866,111 @@ a {
 				}
 			}
 		}
+
+		tbody {
+			tr {
+
+				&:nth-child(4n + 3) {
+					td {
+						background: #f7f7f7;
+					}
+				}
+
+				&.with-img {
+					.name {
+						text-decoration: none;
+					}
+				}
+
+				td {
+					border: 2px solid #e4e4e4;
+					vertical-align: top;
+					text-align: center;
+					color: #424242;
+					font-size: 14pt;
+					padding: 15px 0;
+					background: #fff;
+
+					&.space {
+						border: 0;
+						height: 10px;
+						padding: 0;
+					}
+
+
+					&:first-child {
+						width: 166px;
+					}
+
+					.img-block {
+						width: 137px;
+						height: 137px;
+						overflow: hidden;
+						margin: 20px auto 0 auto;
+
+						img {
+							width: 100%;
+						}
+					}
+
+					.name {
+						color: #424242;
+
+						&:hover {
+							text-decoration: none;
+						}
+					}
+
+					.in_stock {
+						text-align: left;
+						font-size: 12pt;
+						padding-left: 17px;
+						padding-top: 5px;
+						margin-bottom: 0;
+					}
+
+					span {
+
+						&.red {
+							color: #f25822;
+							font-weight: bold;
+
+							i {
+								.sprite-37;
+							}
+						}
+
+						i {
+							.sprite;
+							.sprite-36;
+							display: inline-block;
+							vertical-align: top;
+							margin: 6px 0 0 5px;
+						}
+					}
+
+					.buy-price {
+						color: #f25822;
+						text-decoration: none;
+						font-weight: bold;
+
+						i {
+							.sprite;
+							.sprite-38;
+							display: inline-block;
+							vertical-align: top;
+							margin: 5px 5px 0 0;
+						}
+					}
+				}
+			}
+		}
 	}
 }
-=======
+
+
+.photo-gallery-block {
+	padding: 22px 20px 48px 20px;
+	.box-sizing(border-box);
 }
->>>>>>> c47ce44a1dd312d87b449d82f56f8383c06434be
+
