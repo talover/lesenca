@@ -1624,6 +1624,17 @@ a {
 									background: none;
 								}
 							}
+
+							&:last-child {
+								td {
+									&:first-child {
+										.border-radius-full(0, 0, 0, 10px);
+									}
+									&:last-child {
+										.border-radius-full(0, 0, 10px, 0);
+									}
+								}
+							}
 							
 							td {
 								font-size: 11pt;
@@ -1755,6 +1766,10 @@ a {
 		font: 11pt/13pt 'pf_din_text_cond_prolight', 'arial narrow', tahoma ;
 		border-color: #afafaf;
 		.box-sizing(border-box);
+
+		.jq-selectbox__select-text {
+			margin-right: 10px;
+		}
 	}
 
 	.jq-selectbox__trigger {
