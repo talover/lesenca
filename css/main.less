@@ -214,7 +214,7 @@ a {
 
 .border-radius(@x) {
 	-webkit-border-radius: @x;
-	-moz-order-radius: @x;
+	-moz-border-radius: @x;
 	-ms-border-radius: @x;
 	-o-border-radius: @x;
 	border-radius: @x;
@@ -222,7 +222,7 @@ a {
 
 .border-radius-full(@a,@b,@c,@d) {
 	-webkit-border-radius: @a @b @c @d;
-	-moz-order-radius: @a @b @c @d;
+	-moz-border-radius: @a @b @c @d;
 	-ms-border-radius: @a @b @c @d;
 	-o-border-radius: @a @b @c @d;
 	border-radius: @a @b @c @d;
@@ -1738,4 +1738,37 @@ a {
 	-o-border-radius: 10px;
 	border-radius: 10px;
 	padding: 12px;
+}
+
+.price-block {
+	padding: 22px 20px 48px 20px;
+	.box-sizing(border-box);
+
+	table {
+		width: 100%;
+		margin: 16px 0 0 0;
+
+		thead {
+			th {
+				color: #fff;
+				font-size: 10pt;
+				text-align: center;
+				font-family: 'pf_din_text_cond_promedium';
+				height: 48px;
+				background: #f25822;
+				border-left: 1px solid #df5424;
+				border-right: 1px solid #ff6f3d;
+
+				&:first-child {
+					border-left:0;
+					.border-radius-full(10px,0,0,0);
+				}
+
+				&:last-child {
+					border-right: 0;
+					.border-radius-full(0,10px,0,0);
+				}
+			}
+		}
+	}
 }
