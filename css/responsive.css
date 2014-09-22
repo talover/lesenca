@@ -46,35 +46,58 @@
     margin-left: 20px;
     overflow: hidden;
   }
-  #best_deal > ul li .cont .title {
+  .product_list li .cont .title {
     padding: 5px 0;
   }
-  #best_deal > ul li .cont .title a {
+  .product_list li .cont .title a {
     font-size: 14pt;
   }
-  #best_deal > ul li .cont .img_block {
+  .product_list li .cont .img_block {
     height: 238px;
   }
-  #best_deal > ul li .cont ul li {
+  .catalog-list .product_list li .cont .img_block {
+    height: 230px;
+  }
+  .product_list li .cont ul li {
     float: left;
     width: 50%;
     overflow: hidden;
   }
-  #best_deal > ul li .cont ul li .buy {
+  .product_list li .cont ul li .buy {
     width: 100%;
     font-size: 13pt;
   }
-  #best_deal > ul li .cont ul li .price {
+  .product_list li .cont ul li .price {
     font-size: 15pt;
   }
-  #best_deal > ul li .cont ul li .price i {
+  .product_list li .cont ul li .price i {
     margin-top: 3px;
   }
-
   #footer section .footer_menu > ul > li li {
     width: 95%;
   }
   #footer section .footer_menu > ul > li li a {
     font-size: 10pt;
+  }
+  .photo-gallery-iner .photo-gallery-list {
+    overflow: hidden;
+    min-height: 360px;
+  }
+  .photo-gallery-iner .photo-gallery-list li {
+    padding-top: 70px;
+  }
+  .photo-gallery-iner .photo-gallery-list li .img-block {
+    height: 140px;
+  }
+  .photo-gallery-iner .photo-gallery-list li img {
+    width: 100%;
+  }
+  .photo-gallery-iner .photo-gallery-list li.active .img-block {
+    height: 280px;
+  }
+
+  #header .top_header .back_btn ,
+  #header .top_header .wholesalers {
+    margin:0 0 0 10px;
   }
 }

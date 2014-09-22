@@ -13,9 +13,11 @@
         <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
         <link rel="stylesheet" href="css/normalize.min.css">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
-
+ 
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
@@ -26,15 +28,7 @@
         <script src="js/vendor/jquery.fancybox.pack.js"></script>
         <script src="js/main.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $('.bxslider').bxSlider({
-                    pagerCustom: '#bx-pager',
-                    // mode: 'fade',
-                    auto: true,
-                });
-            });
-        </script>
+
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
             <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -46,7 +40,7 @@
         <![endif]-->
 
         <div id="main">
-
+            
             <header id="header" class="main_container">
                 <div class="top_header">
                     <div class="city">
@@ -120,6 +114,7 @@
                     </ul>
                 </nav>
             </header><!--#header-->
+
 
             <section class="main_container content">
                 <aside>
@@ -246,187 +241,222 @@
                 </aside>
 
                 <article>
-                    <section id="main_slider">
-                        <ul class="bxslider">
-                            <li>
-                                <img src="img/pic_1.png" />
+                    <ul class="breadcrumbs">
+                        <li><a href="">Главная страница</a></li>
+                        <li><a href="">Каталог</a></li>
+                        <li>Модульная лестница</li>
+                    </ul>
 
-                                <div>
-                                    <h3>Деревянные лестницы</h3>
-                                    <p>Комфорт. Удобство. Надежность</p>
+                    <div class="basket-block">
+                        <h2 class="medium_title">Оформление заказа</h2>
+
+                        <table class="orange-table">
+                            <thead>
+                                <th>Изображение</th>
+                                <th>Артикул</th>
+                                <th>Наименование товара</th>
+                                <th>Количество</th>
+                                <th>Цена</th>
+                                <th>Сумма</th>
+                                <th>Удалить</th>
+                            </thead>
+
+                            <tbody>
+                                <tr class="with-img">
+                                    <td>
+                                        <div class="img-block">
+                                            <img src="img/pic_23.png" alt="">
+                                        </div>
+                                    </td>
+                                    <td>ЛЕС-01-Л</td>
+                                    <td class="product">
+                                        Лестница ЛЕС-01 левозаходная (поворот 180 градусов)
+                                        <p class="in_stock"><i></i>В наличии</p>
+                                    </td>
+                                    <td>
+                                        <input type="text" value="1" />
+                                    </td>
+                                    <td><span>45.700<i></i></span></td>
+                                    <td><span>10.000<i></i></span></td>
+                                    <td><a class="delete" href="#"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="total">
+                            Итого:
+                            <span>145.700</span> 
+                            <i></i>
+                        </p>
+                        <form>
+                            <ul class="interested inline-list">
+                                <li>
+                                    <b>Интересует:</b>
+                                </li>
+
+                                <li>
+                                    <input id="check-1" type="radio" name="radio-1" checked/>
+                                    <label for="check-1">Монтаж</label>
+                                </li>
+
+                                <li>
+                                    <input id="check-2" type="radio" name="radio-1"/>
+                                    <label for="check-2">Покраска</label>
+                                </li>
+                            </ul>
+                            <h4>Где получить</h4>
+
+                            <ul class="inline-list">
+
+                                <li>
+                                    <input id="check-3" type="radio" name="radio-2" checked/>
+                                    <label for="check-3">Москва / МО</label>
+                                </li>
+
+                                <li>
+                                    <input id="check-4" type="radio" name="radio-2" />
+                                    <label for="check-4">Санкт-Петербург / ЛО</label>
+                                </li>
+
+                                <li>
+                                    <input id="check-5" type="radio" name="radio-2" />
+                                    <label for="check-5">Тверь / ТО</label>
+                                </li>
+
+                                <li>
+                                    <input id="check-6" type="radio" name="radio-2" />
+                                    <label for="check-6">Другие регионы</label>
+                                </li>
+                            </ul>
+
+                            <h4>Ваши контакты</h4>
+
+                            <div class="contacts-info">
+                                <div class="f_left">
+                                    <input type="text" placeholder="Контактное лицо" />
+                                    <input type="text" placeholder="E-mail" />
+                                    <input type="text" placeholder="Телефон" />
                                 </div>
-                            </li>
-
-                            <li>
-                                <img src="img/pic_1.png" />
-
-                                <div>
-                                    <h3>Деревянные лестницы 2</h3>
-                                    <p>Комфорт. Удобство. Надежность</p>
+                                <div class="f_right">
+                                    <textarea placeholder="Комментарий к заказу"></textarea>
                                 </div>
-                            </li>
+                            </div>
 
-                            <li>
-                                <img src="img/pic_1.png" />
+                            <h4>Способ получения</h4>
 
-                                <div>
-                                    <h3>Деревянные лестницы 3</h3>
-                                    <p>Комфорт. Удобство. Надежность</p>
-                                </div>
-                            </li>
+                            <div class="gray-block">
+                                <ul class="inline-list">
+                                    <li>
+                                        <input id="check-7" type="radio" name="radio-3" checked/>
+                                        <label for="check-7">Доставка</label>
+                                    </li>
 
-                            <li>
-                                <img src="img/pic_1.png" />
+                                    <li>
+                                        <input id="check-8" type="radio" name="radio-3" />
+                                        <label for="check-8">Самовывоз</label>
+                                    </li>
+                                </ul>
 
-                                <div>
-                                    <h3>Деревянные лестницы 4</h3>
-                                    <p>Комфорт. Удобство. Надежность</p>
-                                </div>
-                            </li>
+                                <p>
+                                    Дабы не обделить вниманием поклонников французского автопрома, героем сегодняшнего тест-драйва нами был выбран довольно популярный в России компактный переднеприводный кроссовер Peugeot 2008 в комплектации Active, стоимость которого стартует с отметки 829000 рублей (в нашем случае — 849000 рублей).
+                                </p>
+                            </div>
 
-                            <li>
-                                <img src="img/pic_1.png" />
+                            <h4>Адрес доставки</h4>
 
-                                <div>
-                                    <h3>Деревянные лестницы 5</h3>
-                                    <p>Комфорт. Удобство. Надежность</p>
-                                </div>
-                            </li>
+                            <textarea class="full" placeholder="Адрес доставки"></textarea>
 
-                            <li>
-                                <img src="img/pic_1.png" />
+                            <h4>Оплата</h4>
 
-                                <div>
-                                    <h3>Деревянные лестницы</h3>
-                                    <p>Комфорт. Удобство. Надежность</p>
-                                </div>
-                            </li>
-                        </ul>
+                            <div class="gray-block payment-block">
+                                <ul>
 
-                        <div id="bx-pager">
-                            <a data-slide-index="0" href=""><img src="img/pic_2.png" /></a>
-                            <a data-slide-index="1" href=""><img src="img/pic_2.png" /></a>
-                            <a data-slide-index="2" href=""><img src="img/pic_2.png" /></a>
-                            <a data-slide-index="3" href=""><img src="img/pic_2.png" /></a>
-                            <a data-slide-index="4" href=""><img src="img/pic_2.png" /></a>
-                            <a data-slide-index="5" href=""><img src="img/pic_2.png" /></a>
-                        </div>
-                    </section><!--END #main_slider-->
+                                    <li>
+                                        <input id="check-9" type="radio" name="radio-4" checked/>
+                                        <label for="check-9">Оплатить онлайн</label>
+                                    </li>
 
-                    <div id="best_deal">
-                        <h2 class="medium_title">Лучшее предложение</h2>
+                                    <li>
+                                        <ul>
 
-                        <ul class="product_list">
-                            <li>
-                                <div class="cont">
-                                    <p class="title"><a href="#">Модульная лестница</a></p>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pic_24.png" alt="" />
+                                                </a>
+                                            </li>
 
-                                    <div class="img_block">
-                                        <img src="img/pic_5.png" alt="">
-                                        <span class="discount"></span>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pic_25.png" alt="" />
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pic_26.png" alt="" />
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pic_27.png" alt="" />
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <img src="img/pic_28.png" alt="" />
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <input id="check-10" type="radio" name="radio-4" />
+                                        <label for="check-10">Банковской картой Visa, MasterCard, Maestro курьеру в момент получения товара</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="check-11" type="radio" name="radio-4" />
+                                        <label for="check-11">Наличными или банковской картой в магазине при получении</label>
+                                    </li>
+
+                                    <li>
+                                        <input id="cashless-payment" type="radio" name="radio-4"/>
+                                        <label for="cashless-payment">Безналичный платеж </label>
+                                    </li>
+                                </ul>
+
+                                <div class="cashless-payment">
+                                    <div class="f_left">
+                                        <input type="text" placeholder="Наименование организации сокращенное" />
+                                        <input type="text" placeholder="Полное наименование" />
+                                        <input type="text" placeholder="Юридический адрес" />
+                                        <input type="text" placeholder="Фактический адрес" />
+                                        <input type="text" placeholder="Контактное лицо" />
+                                        <input type="text" placeholder="Телефон" />
+                                        <input type="text" placeholder="ИНН (10-12 цифр)" />
+                                        <input type="text" placeholder="КПП (9 цифр)" />
+                                        <input type="text" placeholder="Расчетный счет" />
+                                        <input type="text" placeholder="Банк плательщика" />
+                                        <input type="text" placeholder="БИК (9 цифр)" />
+                                        <input type="text" placeholder="Корреспондентский счет (20 цифр)" />
+                                        <input type="text" placeholder="E-mail для выставления счета" />
                                     </div>
-                                    <div class="in_stock_block">
-                                        <p class="in_stock"><i></i>В наличии:</p>
-                                        <p class="num">9 штук</p>
+                                    <div class="f_right">
+                                        <p>
+                                            После оформления заказа на указанный e-mail будет выслан счет, который можно будет оплатить в любом ближайшем банке. Если заказ оформлен в Москве или Московской области, счет будет выслан на электронную почту в течение суток после оформления заказа. После этого счет необходимо оплатить в течение 5 рабочих дней. В Москве, Твери, Московской и Тверской областях оформить и забрать заказ можно с понедельника по пятницу с 8:00 до 17:00. В Санкт-Петербурге с 9:00 до 18:00. Если заказ оформлен после 17.00, он будет обработан на следующий день.
+                                        </p>
                                     </div>
-
-                                    <ul class="clearfix">
-                                        <li>
-                                            <p class="price">45.700 <i></i></p>
-                                        </li>
-                                        <li>
-                                            <a class="buy" href="#"><i></i>Купить</a>
-                                        </li>
-                                    </ul>
                                 </div>
-                            </li>
+                            </div>
 
-                            <li>
-                                <div class="cont">
-                                    <p class="title"><a href="#">Модульная лестница</a></p>
+                            <button type="submit">Оформить заказ</button>
+                        </form>
 
-                                    <div class="img_block">
-                                        <img src="img/pic_5.png" alt="">
-                                        <span class="news"></span>
-                                    </div>
-                                    <div class="in_stock_block">
-                                        <p class="in_stock"><i></i>В наличии:</p>
-                                        <p class="num">9 штук</p>
-                                    </div>
+                    </div><!--END .basket-block-->
+                
 
-                                    <ul class="clearfix">
-                                        <li>
-                                            <p class="price">45.700 <i></i></p>
-                                        </li>
-                                        <li>
-                                            <a class="buy" href="#"><i></i>Купить</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cont">
-                                    <p class="title"><a href="#">Модульная лестница</a></p>
-
-                                    <div class="img_block">
-                                        <img src="img/pic_5.png" alt="">
-                                        <span class="action"></span>
-                                    </div>
-                                    <div class="in_stock_block">
-                                        <p class="in_stock order"><i></i>На заказ:</p>
-                                        <p class="num day">5 дней</p>
-                                    </div>
-
-                                    <ul class="clearfix">
-                                        <li>
-                                            <p class="price">45.700 <i></i></p>
-                                        </li>
-                                        <li>
-                                            <a class="buy" href="#"><i></i>Купить</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="about_us">
-                        <h3 class="medium_title">Превосходные деревянные лестницы от производителя</h3>
-                        <h4 class="orange_title">Чем мы отличаемся от других?</h4>
-
-                        <ul>
-                            <li>
-                                Мы находимся на рынке с 2008 года и являемся одним из крупнейших производителей деревянных лестниц эконом.
-                            </li>
-                            <li>
-                                С нашей компанией сотрудничают ведущие российские поставщики и крупные магазины по продаже стройматериалов, 
-                                что говорит о высоком качестве нашей продукции.
-                            </li>
-                            <li>
-                                Сегодня мы предлагаем готовые лестницы более, чем в 10 вариантах, эксклюзивные лестницы на заказ и 15 видов
-                                балясин, некоторые из которых являются нашими собственными разработками. Ассортимент продукции постоянно
-                                расширяется.
-
-                            </li>
-                            <li>
-                                Основные особенности нашей работы - индивидуальный подход к клиенту и оперативность. Если вы собираетесь купить
-                                деревянную лестницу у нас, будьте уверены: её доставят точно в срок, указанный в договоре.
-                            </li>
-                        </ul>
-                        <h4 class='orange_title'>Цена и качество</h4>
-
-                        <ul>
-                            <li>
-                                Основная часть нашего ассортимента – недорогие деревянные лестницы для дома, доступные для всех слоёв населения. 
-                                Но в компании «Лесенка» слово «недорого» вовсе не означает «некачественно». Вы можете купить лестницу на дачу или
-                                заказать эксклюзивную модель лестницы на заказ для своего коттеджа – в любом случае, покупка будет исправно
-                                служить долгое время. Таким образом, выбрав дешёвые деревянные лестницы нашего производства, вы получите
-                                надёжность и качество в сочетании с разумной ценой. Чтобы купить готовую лестницу, вам достаточно выбрать её на 
-                                нашем сайте и сделать он-лайн заказ или звонок менеджеру.
-                            </li>
-                        </ul>
-                    </div>
                 </article>
             </section>
         </div><!--END #main-->
@@ -439,20 +469,19 @@
                 </div>
 
                 <div class="contacts">
-                    <h3>
-                        <a class="active" data-contacts="#contacts-tab-1" href="javascript:void(0)">Частным лицам</a>
+                    <h3><a class="active" data-contacts="#contacts-tab-1" href="javascript:void(0)">Оптовикам</a>
                         <span>/</span>
-                        <a  data-contacts="#contacts-tab-2" href="javascript:void(0)">Оптовикам</a>
+                        <a data-contacts="#contacts-tab-2" href="javascript:void(0)">Частным лицам</a>
                     </h3>
 
                     <div id="contacts-tab-1" class="contacts-tab active">
                         <ul class="contacts_list">
                             <li>
-                                <p>Москва:    <span>+7(495) 374-75-25</span></p>
+                                <p>Москва:    <span>+7(495) 729-04-52</span></p>
                             </li>
 
                             <li>
-                                <p>Санкт-Петербург:<span> +7 (812) 425-31-14</span></p>
+                                <p>Санкт-Петербург:<span> +7 (812) 981-76-85</span></p>
                             </li>
 
                             <li>
@@ -460,7 +489,7 @@
                             </li>
 
                             <li>
-                                <p>Многоканальный:  <span>+7(800) 333-49-25</span></p>
+                                <p>Регионы:  <span>+7(800) 333-49-25</span></p>
                             </li>
                         </ul>
                     </div>
@@ -469,11 +498,19 @@
                     <div id="contacts-tab-2" class="contacts-tab">
                         <ul class="contacts_list">
                             <li>
-                                <p>Оптовый:  <span>+7(4822) 770-260</span></p>
+                                <p>Москва:    <span>+7(495) 333-04-52</span></p>
                             </li>
 
                             <li>
-                                <p>Многоканальный:  <span>+7(800) 333-49-25</span></p>
+                                <p>Санкт-Петербург:<span> +7 (842) 981-76-85</span></p>
+                            </li>
+
+                            <li>
+                                <p>Тверь:   <span>+7(4822) 444-280</span></p>
+                            </li>
+
+                            <li>
+                                <p>Регионы:  <span>+7(800) 353-49-25</span></p>
                             </li>
                         </ul>
                     </div>
@@ -498,6 +535,7 @@
                                 <li><a href="#">Комбинированные</a></li>
                                 <li><a href="#">Деревянные</a></li>
                                 <li><a href="#">Модульные</a></li>
+                                <li><a href="#">На косоурах</a></li>
                                 <li><a href="#">Чердачные </a></li>
                             </ul>
                         </li>

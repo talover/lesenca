@@ -136,27 +136,35 @@
         .stitches-sprite(-438px, -50px, 19px, 15px);
     }
 
+    &.sprite-39 {
+        .stitches-sprite(-77px, -75px, 12px, 8px);
+    }
+
     &.sprite-4 {
         .stitches-sprite(-388px, -176px, 52px, 41px);
     }
 
+    &.sprite-40 {
+        .stitches-sprite(-424px, -140px, 25px, 26px);
+    }
+
     &.sprite-5 {
-        .stitches-sprite(-77px, -75px, 12px, 12px);
+        .stitches-sprite(-233px, -176px, 12px, 12px);
     }
 
     &.sprite-6 {
-        .stitches-sprite(-424px, -140px, 22px, 14px);
+        .stitches-sprite(-255px, -176px, 22px, 14px);
     }
 
     &.sprite-7 {
-        .stitches-sprite(-233px, -164px, 19px, 19px);
+        .stitches-sprite(-233px, -227px, 19px, 19px);
     }
 
     &.sprite-8 {
-        .stitches-sprite(-262px, -164px, 19px, 19px);
+        .stitches-sprite(-262px, -227px, 19px, 19px);
     }
 
     &.sprite-9 {
-        .stitches-sprite(-233px, -227px, 15px, 12px);
+        .stitches-sprite(-291px, -227px, 15px, 12px);
     }
 }

@@ -115,4 +115,30 @@
 			font-size: 10pt;
 		}
 	}
+
+
+	.photo-gallery-iner {
+		.photo-gallery-list {
+			overflow: hidden;
+			min-height: 360px;
+
+			li {
+				padding-top: 70px;
+				.img-block {
+					height: 140px;
+
+				}
+
+				img {
+					width: 100%;
+				}
+
+				&.active {					
+					.img-block {
+						height: 280px;
+					}
+				}
+			}
+		}
+	}
 }
