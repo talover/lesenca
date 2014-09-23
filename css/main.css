@@ -567,7 +567,7 @@ h5 {
   margin: 8px 5px 0 9px;
 }
 #header .top_header .city > ul > li .jq-selectbox .jq-selectbox__select .jq-selectbox__trigger .jq-selectbox__trigger-arrow:after {
-  content: "Выберите свой регион";
+  content: "Ð�Ñ�Ð±ÐµÑ�Ð¸Ñ�Ðµ Ñ�Ð²Ð¾Ð¹ Ñ�ÐµÐ³Ð¸Ð¾Ð½";
   color: #676767;
   font-family: 'pf_din_text_cond_prolight';
   padding: 0 0 0 5px;
@@ -2193,6 +2193,25 @@ h5 {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
+}
+.price-block .price-list {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  color: #3f6c19;
+  font-size: 13pt;
+}
+.price-block .price-list i {
+  display: inline-block;
+  vertical-align: top;
+  width: 26px;
+  height: 28px;
+  margin: -2px 0 0 5px;
+  background: url(images/microsoft_excel.png);
+}
+.price-block .price-list:hover {
+  text-decoration: none;
 }
 .price-block .orange-table {
   margin: 16px 0 45px 0;
@@ -2546,7 +2565,7 @@ h5 {
   text-decoration: none;
 }
 .orange-table tbody tr.active .old {
-  display: block!important;
+  display: block !important;
 }
 .orange-table tbody tr td {
   border: 2px solid #f4f4f4;
@@ -2556,9 +2575,10 @@ h5 {
   text-align: center;
   color: #424242;
   font-size: 13pt;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 10px 0;
   background: #fff;
   min-width: 30px;
+  vertical-align: top;
 }
 .orange-table tbody tr td.product {
   min-width: 166px;
@@ -2579,6 +2599,7 @@ h5 {
 }
 .orange-table tbody tr td .num-block {
   position: relative;
+  margin-top: -11px;
 }
 .orange-table tbody tr td .num-block input[type="text"] {
   text-align: left;
@@ -2632,17 +2653,17 @@ h5 {
   color: #f25822;
   font-weight: bold;
 }
-.orange-table tbody tr td span.old  {
-  font-size: 11pt;
-  display: none;
-}
-.orange-table tbody tr td span.old i {
-  margin-top: 4px;
-}
 .orange-table tbody tr td span.red i {
   background-position: -265px -50px;
   width: 9px;
   height: 13px;
+}
+.orange-table tbody tr td span.old {
+  display: none;
+  font-size: 11pt;
+}
+.orange-table tbody tr td span.old i {
+  margin-top: 4px;
 }
 .orange-table tbody tr td span i {
   background-image: url(images/spritesheet.png);

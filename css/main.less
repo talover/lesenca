@@ -2089,6 +2089,28 @@ h5 {
 .price-block {
 	padding: 22px 20px 48px 20px;
 	.box-sizing(border-box);
+	position: relative;
+
+	.price-list {
+		position: absolute;
+		top: 25px;
+		right: 20px;
+		color: #3f6c19;
+		font-size: 13pt;
+
+		i {
+			display: inline-block;
+			vertical-align: top;
+			width: 26px;
+			height: 28px;
+			margin: -2px 0 0 5px;
+			background: url(images/microsoft_excel.png);
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 
 	.orange-table  {
 		margin: 16px 0 45px 0;
@@ -2452,9 +2474,10 @@ h5 {
 				text-align: center;
 				color: #424242;
 				font-size: 13pt;
-				padding: 10px 0 10px 0;
+				padding: 20px 0 10px 0;
 				background: #fff;
 				min-width: 30px;
+				vertical-align: top;
 
 				&.product {
 					min-width: 166px;
@@ -2481,6 +2504,7 @@ h5 {
 
 				.num-block {
 					position: relative;
+					margin-top: -11px;
 
 					input[type="text"] {
 						text-align: left;
